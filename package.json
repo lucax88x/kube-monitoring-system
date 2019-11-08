@@ -1,0 +1,14 @@
+{
+  "name": "monitor-system",
+  "version": "1.0.0",
+  "description": "monitor system",
+  "main": "index.js",
+  "author": "luca.trazzi@garaio.com",
+  "license": "MIT",
+  "scripts": {
+    "start": "sh scripts/start.sh",
+    "stop": "docker stop grafana && docker rm grafana",
+    "get-cluster-connection-data": "sh scripts/get-cluster-connection-data.sh",
+    "deploy": "sh deploy.sh"
+  }
+}
